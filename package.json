@@ -1,0 +1,22 @@
+{
+  "name": "shevchenko-playwright-project-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:headless": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:headed:safari": "playwright test --headed --project=webkit",
+    "test:headed:chromium": "playwright test --headed --project=chromium",
+    "test:headed:chrome": "playwright test --headed --project='Google Chrome' --workers=1",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.0"
+  }
+}
