@@ -8,7 +8,7 @@ let garagePage;
 
 test.describe("Positive registration tests", () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto("https://qauto.forstudy.space/");
+    await page.goto("/");
   });
 
   test("Should successfully register a new user with valid data", async ({ page }) => {
@@ -31,7 +31,7 @@ test.describe("Positive registration tests", () => {
 test.describe("Negative registration tests", () => {
   test.beforeEach(async ({ page }) => {
     registrationPopUpPage = new RegistrationPopUpPage(page);
-    await page.goto("https://qauto.forstudy.space/");
+    await page.goto("/");
     await registrationPopUpPage.shouldPopUpSeeTitle();
   });
 
