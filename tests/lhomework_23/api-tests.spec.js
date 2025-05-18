@@ -32,7 +32,7 @@ test("Change response body test", async ({ page }) => {
 });
 
 test.describe("Positive car tests", () => {
-  test("Add car test", async ({ page, request }) => {
+  test("Add car test", async ({request }) => {
     const apiResponse = await request.post(
       "https://qauto.forstudy.space/api/cars",
       {
@@ -57,7 +57,7 @@ test.describe("Positive car tests", () => {
 });
 
 test.describe("Negative car tests", () => {
-  test("Add car with invalid data type test", async ({ page, request }) => {
+  test("Add car with invalid data type test", async ({request }) => {
     const apiResponse = await request.post(
       "https://qauto.forstudy.space/api/cars",
       {
